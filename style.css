@@ -9,7 +9,7 @@ body {
     font-weight: 300; 
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 300;
     letter-spacing: 0.02em;
@@ -111,8 +111,12 @@ header .site-navigation ul li a {
     color: #333;
 }
 
-.work-item:hover .overlay, 
-.work-item:active .overlay  {
+.work-item:hover .overlay {
+    background: rgba(255, 255, 255, 0.8);
+    opacity: 1;
+}
+
+.work-item:focus .overlay {
     background: rgba(255, 255, 255, 0.8);
     opacity: 1;
 }
