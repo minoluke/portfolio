@@ -1,0 +1,190 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    background-color: #fff;
+}
+
+header.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    border-bottom: 1px solid #ddd;
+}
+
+header .logo h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.logo a {
+    text-decoration: none; /* 下線を削除 */
+    color: inherit; /* 親要素の色を引き継ぐ */
+}
+
+.logo a:hover {
+    text-decoration: none; /* ホバー時も下線を消す */
+}
+
+header .site-navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+
+header .site-navigation ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    position: relative;
+}
+
+/* Work Section Styles */
+.work-section {
+    padding: 2em;
+}
+
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1em;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.work-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.work-item img {
+    width: 100%;
+    height: 300px; /* 強制的に正方形に近い形状 */
+    object-fit: cover;
+    display: block;
+}
+
+.work-item a {
+    display: block;
+    position: relative;
+}
+
+.work-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s, background 0.3s;
+    text-align: center;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+.work-item .overlay p {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.work-item:hover .overlay {
+    background: rgba(255, 255, 255, 0.8); 
+    opacity: 1;
+}
+
+/* Footer Styles */
+footer.site-footer {
+    text-align: center;
+    padding: 1em;
+    border-top: 1px solid #ddd;
+}
+
+footer .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+footer .social-links p {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+}
+
+/* PDF Viewer Styles */
+.paper-section {
+    padding: 2em;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pdf-container {
+    margin: 2em 0;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.pdf-viewer {
+    width: 100%;
+    height: 600px;
+    border: none;
+}
+
+/* Links Styles */
+.paper-section a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.paper-section a:hover {
+    color: #0056b3;
+}
+
+/* ベースフォントをサンセリフ体に変更 */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* 見出しを太字かつモダンなフォントに */
+h1, h2, h3 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700; /* 太字 */
+    letter-spacing: 0.02em; /* 少し文字間を広げる */
+}
+
+h1 {
+    font-size: 2.5em; /* ヘッダー部分のロゴなどに対応 */
+}
+
+h2 {
+    font-size: 2em; /* セクションタイトルに対応 */
+}
+
+.video-container {
+    max-width: 600px; /* 動画の最大幅を制限 */
+    margin: 0 auto; /* 中央寄せ */
+    text-align: center;
+}
+
+video {
+    width: 100%; /* 動画を親要素にフィット */
+    height: auto; /* アスペクト比を維持 */
+    border: 1px solid #ddd; /* 動画に枠線を追加（必要なら） */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 軽い影を追加 */
+}
