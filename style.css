@@ -151,9 +151,9 @@ footer .social-links p {
 
 .pdf-container {
     width: 100%;
-    max-width: 800px; /* 最大幅を指定 */
-    margin: 0 auto; /* センター揃え */
-    overflow: hidden; /* スクロールを制限 */
+    max-width: 800px; 
+    margin: 0 auto;
+    overflow: hidden; 
 }
 
 .pdf-viewer {
@@ -164,7 +164,7 @@ footer .social-links p {
 
 @media (max-width: 768px) {
     .pdf-viewer {
-        height: 400px; /* 高さを縮小 */
+        height: 400px; 
     }
 }
 
